@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+
+        .all {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .navbar {
+            display:inline;
+            margin-top: 10px;
+        }
+
+        .navbar img {
+            width: 120px;
+        }
+
+        .help {
+           list-style: none;
+           float:right;
+        }
+
+        .help li {
+            float:left;
+        }
+
+        .help a {
+            text-decoration:none;
+            color:rgb(171, 171, 171);
+            padding-right:10px;
+            font-size: 13px;
+            vertical-align: top;
+        }
+        
+        .help li a:hover {
+            color:#fe7171;
+        }
+        
+        .navbar img {
+            padding-top:10px;
+            padding-left:10px;
+        }
+
+        .navbar a:not(:first-child) {
+            padding-right: 20px;
+        }
+
+        .body {
+            text-align: center;
+            background-color: #f3f3f3;
+        }
+
+        .login {
+            padding-left: 12%;
+            padding-right: 12%;
+            padding-top: 35%;
+            padding-bottom: 40%;
+        }
+
+        .login h3 {
+            font-size: 20px;
+            padding-bottom: 20px;
+            color: #262626;
+        }
+
+        .id p {
+            font-size: 12px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 15px;
+            display: table;
+        }
+
+        .id {
+            background-color: #c3c3c3;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            border-radius: 5px;
+        }
+
+        .pw p {
+            font-size: 12px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 15px;
+            display: table;
+        }
+
+        .pw {
+            background-color: #c3c3c3;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            border-radius: 5px;
+            margin-top: -5px;
+        }
+
+        .check {
+            display: inline;
+        }
+
+        .check img {
+            width: 15px;
+            display: inline;
+        }
+
+        .check p {
+            font-size: 12px;
+            display: inline;
+            margin-top: -2px;
+            padding-bottom: 2px;
+            color: #262626;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .button {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+        }
+
+        .button a {
+            background-color: #dddddd;
+            border-radius: 5px;
+            font-size: 14px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-left: 15%;
+            padding-right: 15%;
+            text-decoration: none;
+            color: #353535;
+        }
+
+        .button :hover {
+            background-color: #fcc1c1;
+            border-radius: 5px;
+        }
+
+        .another {
+            margin-top: 140px;
+        }
+
+        .another p {
+            display: inline;
+            font-size: 12px;
+            padding-left: 5px;
+            color:#6f6f6f;
+        }
+
+        @media (min-width:810px) {.navbar {
+            display:inline;
+            margin-top: 10px;
+        }
+
+        .navbar img {
+            width: 120px;
+        }
+
+        .help {
+           list-style: none;
+           float:right;
+        }
+
+        .help li {
+            float:left;
+        }
+
+        .help a {
+            text-decoration:none;
+            color:rgb(171, 171, 171);
+            padding-right:10px;
+            font-size: 13px;
+            vertical-align: top;
+        }
+        
+        .help li a:hover {
+            color:#fe7171;
+        }
+        
+        .navbar img {
+            padding-top:10px;
+            padding-left:10px;
+        }
+
+        .navbar a:not(:first-child) {
+            padding-right: 20px;
+        }
+
+        .body {
+            text-align: center;
+            background-color: #f3f3f3;
+        }
+
+        .login {
+            padding-left: 12%;
+            padding-right: 12%;
+            padding-top: 35%;
+            padding-bottom: 35%;
+        }
+
+        .login h3 {
+            font-size: 20px;
+            padding-bottom: 20px;
+            color: #262626;
+        }
+
+        .id p {
+            font-size: 12px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 15px;
+            display: table;
+        }
+
+        .id {
+            background-color: #c3c3c3;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            border-radius: 5px;
+        }
+
+        .pw p {
+            font-size: 12px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 15px;
+            display: table;
+        }
+
+        .pw {
+            background-color: #c3c3c3;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            border-radius: 5px;
+            margin-top: -5px;
+        }
+
+        .check {
+            display: inline;
+        }
+
+        .check img {
+            width: 15px;
+            display: inline;
+        }
+
+        .check p {
+            font-size: 12px;
+            display: inline;
+            margin-top: -2px;
+            padding-bottom: 2px;
+            color: #262626;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .button {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+        }
+
+        .button a {
+            background-color: #dddddd;
+            border-radius: 5px;
+            font-size: 14px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-left: 10%;
+            padding-right: 10%;
+            text-decoration: none;
+            color: #353535;
+        }
+
+        .button :hover {
+            background-color: #fcc1c1;
+            border-radius: 5px;
+        }
+
+        .another {
+            margin-top: 140px;
+        }
+
+        .another p {
+            display: inline;
+            font-size: 12px;
+            padding-left: 5px;
+            color:#6f6f6f;
+        }
+        }
+
+        @media (min-width:1200px) {
+            .navbar {
+            display:inline;
+            margin-top: 10px;
+        }
+
+        .navbar img {
+            width: 120px;
+        }
+
+        .help {
+           list-style: none;
+           float:right;
+        }
+
+        .help li {
+            float:left;
+        }
+
+        .help a {
+            text-decoration:none;
+            color:rgb(171, 171, 171);
+            padding-right:10px;
+            font-size: 13px;
+            vertical-align: top;
+        }
+        
+        .help li a:hover {
+            color:#fe7171;
+        }
+        
+        .navbar img {
+            padding-top:10px;
+            padding-left:10px;
+        }
+
+        .navbar a:not(:first-child) {
+            padding-right: 20px;
+        }
+
+        .body {
+            text-align: center;
+            background-color: #f3f3f3;
+        }
+
+        .login {
+            padding-left: 12%;
+            padding-right: 12%;
+            padding-top: 18%;
+            padding-bottom: 18%;
+        }
+
+        .login h3 {
+            font-size: 30px;
+            padding-bottom: 20px;
+            color: #262626;
+        }
+
+        .id p {
+            font-size: 12px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 15px;
+            display: table;
+        }
+
+        .id {
+            background-color: #c3c3c3;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+            border-radius: 5px;
+        }
+
+        .pw p {
+            font-size: 12px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 15px;
+            display: table;
+        }
+
+        .pw {
+            background-color: #c3c3c3;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+            border-radius: 5px;
+            margin-top: -5px;
+        }
+
+        .check {
+            display: inline;
+        }
+
+        .check img {
+            width: 15px;
+            display: inline;
+        }
+
+        .check p {
+            font-size: 12px;
+            display: inline;
+            margin-top: -2px;
+            padding-bottom: 2px;
+            color: #262626;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .button {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+        }
+
+        .button a {
+            background-color: #dddddd;
+            border-radius: 5px;
+            font-size: 14px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-left: 5%;
+            padding-right: 5%;
+            text-decoration: none;
+            color: #353535;
+        }
+
+        .button :hover {
+            background-color: #fcc1c1;
+            border-radius: 5px;
+        }
+
+        .another {
+            margin-top: 140px;
+        }
+
+        .another p {
+            display: inline;
+            font-size: 12px;
+            padding-left: 5px;
+            color:#6f6f6f;
+        }
+        }
+
+    </style>
+</head>
+<body>
+<div class="all">
+    <div class="navbar">
+        <a href="index.html"><img src="https://i.postimg.cc/JnJ9Nx1W/pngwing-com-5.png"></a>
+
+        <ul class="help">
+            <li><a href="기말 과제 (로그인).html">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">마이페이지</a></li>
+        </ul>
+    </div>
+
+    <div class="body">
+        <div class="login">
+
+            <h3>로그인</h3>
+
+
+            <div class="id">
+                <p>아이디</p>
+            </div>
+
+            <div class="pw">
+                <p>비밀번호</p>
+            </div>
+
+            <div class="check">
+                <img src="https://i.postimg.cc/Mp2LsFTh/pngwing-com-7.png">
+                <p>로그인 유지</p>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="button">
+                <a href="index.html">로그인</a>
+            </div>
+
+            <div class="another">
+                <p>아이디 찾기</p> <p>|</p>
+                <p>비밀번호 찾기</p> <p>|</p>
+                <p>회원가입</p>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+    
+</body>
+</html>

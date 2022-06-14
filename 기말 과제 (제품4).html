@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        .all {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .navbar {
+            display:inline;
+            margin-top: 10px;
+        }
+
+        .navbar img {
+            width: 120px;
+        }
+
+        .help {
+           list-style: none;
+           float:right;
+        }
+
+        .help li {
+            float:left;
+        }
+
+        .help a {
+            text-decoration:none;
+            color:rgb(171, 171, 171);
+            padding-right:10px;
+            font-size: 13px;
+            vertical-align: top;
+        }
+        
+        .help li a:hover {
+            color:#fe7171;
+        }
+        
+        .navbar img {
+            padding-top:10px;
+            padding-left:10px;
+        }
+
+        .navbar a:not(:first-child) {
+            padding-right: 20px;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .kind {
+            text-align: center;
+            margin-top: 30px
+        }
+
+        .kind a {
+            display: inline;
+            text-decoration: none;
+            margin-right: 25px;
+            margin-left: 25px;
+            border-top: 1px solid #949494;
+            padding-top: 5px;
+            color: #121212;
+        }
+
+        .kind a:not(:first-child){
+            display: inline;
+            text-decoration: none;
+            color: #949494;
+            margin-right: 25px;
+            margin-left: 25px;
+            border-top: 1px solid #949494;
+            padding-top: 5px;
+        }
+
+        .submenu {
+            background-color: #242424;
+            height: 300px;
+        }
+
+        .submenu p {
+            display: inline;
+            color: #d1d1d1;
+            font-size: 12px;
+            padding-left: 4px;
+        }
+
+        .firstp {
+            padding-left: 40px;
+            padding-right: 40px;
+            border-top: 1px solid #d1d1d1;
+        }
+
+        .secondp {
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-top: 130px;
+        }
+
+        .secondp p {
+            display: inline;
+            color: #d1d1d1;
+            font-size: 12px;
+            padding-left: 4px;
+        }
+
+        .sns {
+            text-align: center;
+            padding-top: 200px;
+            background-color: #484848;
+        }
+
+        .sns img {
+            display: inline;
+            width: 5%;
+        }
+        
+        .sns :hover img {
+            background-color: #c0c0c0;
+        }
+
+        .add {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .add p {
+            display: inline;
+            color: #d1d1d1;
+            font-size: 12px;
+            padding-left: 4px;
+        }
+
+        .contents1 {
+            margin-top: 10%;
+        }
+
+        .contentsimg img {
+            display: inline;
+            float: left;
+            width: 50%;
+        }
+
+        .contentsimg .text {
+            font-size: 13px;
+        }
+
+        .contentsimg h3 {
+            padding-top: 30%;
+        }
+
+        .clearfix {
+            clear:both;
+        }
+
+        .subimg {
+            margin-top: 5%;
+            text-align: center;
+        }
+
+        .subimg img{
+            display: inline;
+            width: 24%;
+        }
+
+        .decoration p {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+
+        .big {
+            background-color: #484848;
+        }
+
+        .bigimg1 {
+            text-align: center;
+        }
+
+        .bigimg1 img {
+            width: 98%
+        }
+
+        .bigimg2 {
+            text-align: center;
+        }
+
+        .bigimg2 img {
+            width: 98%
+        }
+
+        @media (min-width:810px){
+            .navbar {
+            display:inline;
+            margin-top: 10px;
+        }
+
+        .navbar img {
+            width: 120px;
+        }
+
+        .help {
+           list-style: none;
+           float:right;
+        }
+
+        .help li {
+            float:left;
+        }
+
+        .help a {
+            text-decoration:none;
+            color:rgb(171, 171, 171);
+            padding-right:10px;
+            font-size: 13px;
+            vertical-align: top;
+        }
+        
+        .help li a:hover {
+            color:#fe7171;
+        }
+        
+        .navbar img {
+            padding-top:10px;
+            padding-left:10px;
+        }
+
+        .navbar a:not(:first-child) {
+            padding-right: 20px;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .kind {
+            text-align: center;
+            margin-top: 30px
+        }
+
+        .kind a {
+            display: inline;
+            text-decoration: none;
+            margin-right: 25px;
+            margin-left: 25px;
+            border-top: 1px solid #949494;
+            padding-top: 5px;
+            color: #121212;
+        }
+
+        .kind a:not(:first-child){
+            display: inline;
+            text-decoration: none;
+            color: #949494;
+            margin-right: 25px;
+            margin-left: 25px;
+            border-top: 1px solid #949494;
+            padding-top: 5px;
+        }
+
+        .submenu {
+            background-color: #242424;
+            height: 300px;
+        }
+
+        .submenu p {
+            display: inline;
+            color: #d1d1d1;
+            font-size: 12px;
+            padding-left: 4px;
+        }
+
+        .firstp {
+            padding-left: 40px;
+            padding-right: 40px;
+            border-top: 1px solid #d1d1d1;
+        }
+
+        .secondp {
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-top: 130px;
+        }
+
+        .secondp p {
+            display: inline;
+            color: #d1d1d1;
+            font-size: 12px;
+            padding-left: 4px;
+        }
+
+        .sns {
+            text-align: center;
+            padding-top: 200px;
+            background-color: #484848;
+        }
+
+        .sns img {
+            display: inline;
+            width: 5%;
+        }
+        
+        .sns :hover img {
+            background-color: #c0c0c0;
+        }
+
+        .add {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .add p {
+            display: inline;
+            color: #d1d1d1;
+            font-size: 12px;
+            padding-left: 4px;
+        }
+
+        .contents1 {
+            margin-top: 10%;
+        }
+
+        .contentsimg img {
+            display: inline;
+            float: left;
+            width: 50%;
+        }
+
+        .contentsimg .text {
+            font-size: 13px;
+        }
+
+        .contentsimg h3 {
+            padding-top: 30%;
+        }
+
+        .clearfix {
+            clear:both;
+        }
+
+        .subimg {
+            margin-top: 5%;
+            text-align: center;
+        }
+
+        .subimg img{
+            display: inline;
+            width: 24%;
+        }
+
+        .decoration p {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+
+        .big {
+            background-color: #484848;
+        }
+
+        .bigimg1 {
+            text-align: center;
+        }
+
+        .bigimg1 img {
+            width: 98%
+        }
+
+        .bigimg2 {
+            text-align: center;
+        }
+
+        .bigimg2 img {
+            width: 98%
+        }
+        }
+
+        @media (min-width:1200px){
+            .navbar {
+            display:inline;
+            margin-top: 10px;
+        }
+
+        .navbar img {
+            width: 120px;
+        }
+
+        .help {
+           list-style: none;
+           float:right;
+        }
+
+        .help li {
+            float:left;
+        }
+
+        .help a {
+            text-decoration:none;
+            color:rgb(171, 171, 171);
+            padding-right:10px;
+            font-size: 13px;
+            vertical-align: top;
+        }
+        
+        .help li a:hover {
+            color:#fe7171;
+        }
+        
+        .navbar img {
+            padding-top:10px;
+            padding-left:10px;
+        }
+
+        .navbar a:not(:first-child) {
+            padding-right: 20px;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .kind {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .kind a {
+            display: inline;
+            text-decoration: none;
+            margin-right: 25px;
+            margin-left: 25px;
+            border-top: 1px solid #949494;
+            padding-top: 5px;
+            color: #121212;
+        }
+
+        .kind a:not(:first-child){
+            display: inline;
+            text-decoration: none;
+            color: #949494;
+            margin-right: 25px;
+            margin-left: 25px;
+            border-top: 1px solid #949494;
+            padding-top: 5px;
+        }
+
+        .submenu {
+            background-color: #242424;
+            height: 300px;
+        }
+
+        .submenu p {
+            display: inline;
+            color: #d1d1d1;
+            font-size: 12px;
+            padding-left: 4px;
+        }
+
+        .firstp {
+            padding-left: 40px;
+            padding-right: 40px;
+            border-top: 1px solid #d1d1d1;
+        }
+
+        .secondp {
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-top: 130px;
+        }
+
+        .secondp p {
+            display: inline;
+            color: #d1d1d1;
+            font-size: 12px;
+            padding-left: 4px;
+        }
+
+        .sns {
+            text-align: center;
+            padding-top: 200px;
+            background-color: #484848;
+        }
+
+        .sns img {
+            display: inline;
+            width: 3%;
+        }
+        
+        .sns :hover img {
+            background-color: #c0c0c0;
+        }
+
+        .add {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .add p {
+            display: inline;
+            color: #d1d1d1;
+            font-size: 12px;
+            padding-left: 4px;
+        }
+
+        .contents1 {
+            margin-top: 8%;
+        }
+        
+
+        .contentsimg img {
+            display: inline;
+            float: left;
+            width: 40%;
+            padding-left: 10%;
+        }
+
+        .contentsimg .text {
+            font-size: 18px;
+            padding-right: 10%;
+        }
+
+        .contentsimg h3 {
+            padding-top: 30%;
+        }
+
+        .clearfix {
+            clear:both;
+        }
+
+        .subimg {
+            margin-top: 5%;
+            text-align: center;
+        }
+
+        .subimg img{
+            display: inline;
+            width: 20%;
+        }
+
+        .decoration p {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+
+        .big {
+            background-color: #484848;
+        }
+
+        .bigimg1 {
+            text-align: center;
+        }
+
+        .bigimg1 img {
+            width: 70%
+        }
+
+        .bigimg2 {
+            text-align: center;
+        }
+
+        .bigimg2 img {
+            width: 70%
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="navbar">
+            <a href="#"><img src="https://i.postimg.cc/JnJ9Nx1W/pngwing-com-5.png"></a>
+    
+            <ul class="help">
+                <li><a href="기말 과제 (로그인).html">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">마이페이지</a></li>
+            </ul>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="kind">
+            <a href="기말 과제 (제품1).html">DSLR</a>
+            <a href="기말 과제 (제품2).html">렌즈</a>
+            <a href="기말 과제 (제품3).html">미러리스</a>
+            <a href="기말 과제 (제품4).html">캠코더</a>
+        </div>
+
+        <div class="contents">
+            <div class="contents1">
+                <div class="contentsimg">
+                    <img src="https://i.postimg.cc/xd4DQkzW/2022-06-14-093557.png">
+
+                    <div class="text">
+                    <h3>VIXIA HF G50</h3>
+                    <p>VIXIA HF G50는 4K 대응 1/2.3형 고감도 CMOS 센서와 DIGIC DV 6 이미지 프로세서 및 고배율 줌 렌즈로 고화질 4K UHD 기록을 실현했습니다. 또한 향상된 자동 화이트 밸런스 시스템으로 자연스럽고 생생한 색감을 재현합니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="subimg">
+                    <img src="https://i.postimg.cc/tgTQ8dY3/2022-06-14-093544.png">
+                    <img src="https://i.postimg.cc/pTww9gkC/2022-06-14-093608.png">
+                    <img src="https://i.postimg.cc/pV8bNLX6/2022-06-14-093618.png">
+                    <img src="https://i.postimg.cc/13vb0gJf/2022-06-14-093629.png">
+            </div>
+        </div>
+
+        <div class="big">
+            <div class="decoration">
+                <p>________</p>
+            </div>
+            
+    
+            <div class="bigimg1">
+                <img src="https://i.postimg.cc/0N333Tgv/2022-06-14-093725.png">
+            </div>
+            <div class="bigimg2">
+                <img src="https://i.postimg.cc/0Qw3qVxw/2022-06-14-093743.png">
+            </div>
+        </div>
+
+        <div class="sns">
+            <a href="https://www.facebook.com/canonkoreacamera" class="sns1"><img src="https://i.postimg.cc/N0TPVVdn/pngwing-com-8.png"></a>
+            <a href="https://www.youtube.com/channel/UCzRW5RWMLdRQjwTuZLl5yfg" class="sns2"><img src="https://i.postimg.cc/m2DpRhdC/pngwing-com-9.png"></a>
+            <a href="https://www.instagram.com/canonkorea/" class="sns3"><img src="https://i.postimg.cc/G3j6dWbw/pngwing-com-7.png"></a>
+            <a href="https://twitter.com/canoncamera_kr" class="sns4"><img src="https://i.postimg.cc/2SLHbMN5/pngwing-com-10.png"></a>
+    
+            <div class="clearfix"></div>
+        </div>
+        
+    
+        <div class="submenu">
+            <div class="deco">
+                <p> </p>
+            </div>
+            <div class="firstp">
+                <br>
+                <p>회사 소개</p> <p>|</p>
+                <p>이용약관</p> <p>|</p>
+                <p>개인정보처리방침</p> <p>|</p>
+                <p>영상정보 처리기기 운영방침</p> <p>|</p>
+                <p>사이트맵</p> <p>|</p>
+                <p>캐논 코리아 통합사이트</p> <p>|</p>
+                <p>캐논글로벌</p>
+            </div>
+    
+            <div class="secondp">
+                <p>캐논코리아 주식회사</p> <p>|</p>
+                <p>대표자 : 최세환</p> <p>|</p>
+                <p>사업자 등록번호 : 120-81-15636</p> <p>|</p>
+                <p>통신판매업 신고번호 : 강남-01282</p>
+            </div>
+    
+            <div class="add">
+                <p>주소 : 서울특별시 강남구 테헤란로 607 (삼성동)</p>
+                <br>
+                <p>COPYRIGHT © CANON KOREA INC. All RIGHTS RESERVED</p>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
