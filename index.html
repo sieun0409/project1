@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+
+        .all {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .navbar {
+            display:inline;
+            margin-top: 10px;
+        }
+
+        .navbar img {
+            width: 120px;
+        }
+
+        .help {
+           list-style: none;
+           float:right;
+        }
+
+        .help li {
+            float:left;
+        }
+
+        .menubar {
+            display: inline;
+            float: right;
+
+        }
+
+        .menubar img {
+            width: 20px;
+            margin-top: 6px;
+        }
+
+        .plus1 {
+            font-size: 0px;
+        }
+        
+        .plus1 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .help a {
+            text-decoration:none;
+            color:rgb(171, 171, 171);
+            padding-right:10px;
+            font-size: 13px;
+            vertical-align: top;
+        }
+        
+        .help li a:hover {
+            color:#fe7171;
+        }
+        
+        .navbar img {
+            padding-top:10px;
+            padding-left:10px;
+        }
+
+        .navbar a:not(:first-child) {
+            padding-right: 20px;
+        }
+
+        .mainimage {
+            background-image: url( "https://i.postimg.cc/Vs2FQwB4/img-01-02-02.jpg" );
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 150px;
+            padding-bottom: 150px;
+            margin-top: 10px;
+        }
+
+        .mainimage h3{
+            color: white;
+            text-align: center;
+            font-size: 28px;
+            text-shadow: #292929 3px 3px 3px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            color:#494949;
+        }
+
+        #pic1 img {
+            width: 15%;
+            border: solid 6px white;
+        }
+
+        #pic2 img {
+            width: 20%;
+            position:relative;
+            margin-left: -50px;
+            border: solid 6px white;
+        }
+
+        #pic3 img {
+            width: 25%;
+            position:relative;
+            margin-left: -50px;
+            border: solid 6px white;
+        }
+
+        #pic4 img {
+            width: 20%;
+            position:relative;
+            margin-left: -50px;
+            border: solid 6px white;
+            z-index: -1;
+        }
+
+        #pic5 img {
+            width: 15%;
+            position:relative;
+            margin-left: -50px;
+            border: solid 6px white;
+            z-index: -2;
+        }
+
+        .photogallery {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .product {
+            text-align: center;
+            background-color: #eaeaea;
+            padding-bottom:80px;
+            padding-top: 40px;
+        }
+
+        .product b {
+            text-align: center;
+            font-size: 25px;
+            color:#494949;
+        }
+
+        .product1 img {
+            width:40%;
+            float: left;
+            margin-left: 30px;
+            margin-top: 50px;
+            transition: all 0.3s linear;
+        }
+
+        .product1 :hover img {
+            transform: scale(1.1);
+        }
+
+        .product2 img {
+            width:35%;
+            float: right;
+            margin-right: 60px;
+            margin-top: 50px;
+            transition: all 0.3s linear;
+        }
+
+        .product2 :hover img {
+            transform: scale(1.1);
+        }
+
+        .product3 img {
+            width:35%;
+            float: left;
+            margin-left: 40px;
+            margin-top: 80px;
+            transition: all 0.3s linear;
+        }
+
+        .product3 :hover img {
+            transform: scale(1.1);
+        }
+
+        .product4 img {
+            width:40%;
+            float: right;
+            margin-right: 50px;
+            margin-top: 80px;
+            transition: all 0.3s linear;
+        }
+
+        .product4 :hover img {
+            transform: scale(1.1);
+        }
+
+        .clearfix {
+            clear:left;
+        }
+
+        .place {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 50px;
+        }
+
+        .place img {
+            width: 360px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .place a {
+            text-decoration: none;
+            color:#494949;
+        }
+
+        .place b {
+            font-size: 14px;
+        }
+
+        .second {
+            background-color: #ececec;
+            padding-bottom: 30px;
+        }
+
+        .second .subtitle {
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .second .service a {
+            text-decoration: none;
+            color: #494949;
+            float: left;
+            width: 20%;
+            padding-left: 20%;
+            padding-bottom: 40px;
+            padding-top: 10px;
+        }
+
+        .service1 {
+            background-color: #dadada;
+            text-align: center;
+        }
+
+        .service2 {
+            background-color: #dadada;
+            text-align: center;
+        }
+
+        .service3 {
+            background-color: #dadada;
+            text-align: center;
+        }
+
+        .service4 {
+            background-color: #dadada;
+            text-align: center;
+        }
+
+        .second .service a:hover {
+            text-decoration: none;
+            color: #ff7c7c;
+            float: left;
+            width: 20%;
+            padding-left: 20%;
+            padding-bottom: 40px;
+            padding-top: 10px;
+        }
+
+        .ad {
+            margin-top: 80px;
+        }
+
+        .submenu {
+            background-color: #242424;
+            height: 300px;
+        }
+
+        .submenu p {
+            display: inline;
+            color: #d1d1d1;
+            font-size: 12px;
+            padding-left: 4px;
+        }
+
+        .firstp {
+            padding-left: 40px;
+            padding-right: 40px;
+            border-top: 1px solid #d1d1d1;
+        }
+
+        .secondp {
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-top: 130px;
+        }
+
+        .secondp p {
+            display: inline;
+            color: #d1d1d1;
+            font-size: 12px;
+            padding-left: 4px;
+        }
+
+        .sns {
+            text-align: center;
+            background-color: #ececec; 
+        }
+
+        .sns img {
+            display: inline;
+            width: 5%;
+        }
+        
+        .sns :hover img {
+            background-color: #c0c0c0;
+        }
+
+        .add {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .add p {
+            display: inline;
+            color: #d1d1d1;
+            font-size: 12px;
+            padding-left: 4px;
+        }
+
+
+        @media (min-width:810px) {
+            
+            .navbar {
+            display:inline;
+            margin-top: 10px;
+        }
+
+        .navbar img {
+            width: 120px;
+        }
+
+        .help {
+           list-style: none;
+           float:right;
+        }
+
+        .help li {
+            float:left;
+        }
+
+        .menubar img {
+            width: 0px;
+        }
+
+        .plus1 a {
+            text-decoration: none;
+            color: rgb(171, 171, 171);
+            padding-left: 50px;
+            font-size: 13px;
+        }
+
+        .plus1 {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 7px;
+            border-top: 2px solid rgba(171, 171, 171, 0.3);
+            border-bottom: 2px solid rgba(171, 171, 171, 0.3);
+        }
+
+        .plus1 :hover {
+            color: #fe7171;
+        }
+
+        .help a {
+            text-decoration:none;
+            color:rgb(171, 171, 171);
+            padding-right:10px;
+            font-size: 13px;
+            vertical-align: top;
+        }
+        
+        .help li a:hover {
+            color:#fe7171;
+        }
+        
+        .navbar img {
+            padding-top:10px;
+            padding-left:10px;
+        }
+
+        .navbar a:not(:first-child) {
+            padding-right: 20px;
+        }
+
+        .mainimage {
+            background-image: url( "https://i.postimg.cc/Vs2FQwB4/img-01-02-02.jpg" );
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-width: 1200px;
+            padding-top: 180px;
+            padding-bottom: 180px;
+            margin-top: 10px;
+        }
+
+        .mainimage h3{
+            color: white;
+            text-align: center;
+            font-size: 28px;
+            text-shadow: #292929 3px 3px 3px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            color:#494949;
+        }
+
+        #pic1 img {
+            width: 15%;
+            border: solid 6px white;
+        }
+
+        #pic2 img {
+            width: 20%;
+            position:relative;
+            margin-left: -50px;
+            border: solid 6px white;
+        }
+
+        #pic3 img {
+            width: 25%;
+            position:relative;
+            margin-left: -50px;
+            border: solid 6px white;
+        }
+
+        #pic4 img {
+            width: 20%;
+            position:relative;
+            margin-left: -50px;
+            border: solid 6px white;
+            z-index: -1;
+        }
+
+        #pic5 img {
+            width: 15%;
+            position:relative;
+            margin-left: -50px;
+            border: solid 6px white;
+            z-index: -2;
+        }
+
+        .photogallery {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .product {
+            text-align: center;
+            background-color: #eaeaea;
+            padding-bottom:80px;
+            padding-top: 40px;
+        }
+
+        .product b {
+            text-align: center;
+            font-size: 30px;
+            color:#494949;
+        }
+
+        .product1 img {
+            float: left;
+            max-width: 18%;
+            margin-top: 110px;
+            padding-right: 50px;
+            transition: all 0.3s linear;
+        }
+
+        .product1 :hover img {
+            transform: scale(1.1);
+        }
+
+        .product2 img {
+            float: left;
+            max-width: 16%;
+            margin-top: 100px;
+            transition: all 0.3s linear;
+        }
+
+        .product2 :hover img {
+            transform: scale(1.1);
+        }
+
+        .product4 img {
+            float: right;
+            max-width: 18%;
+            margin-top: 110px;
+            transition: all 0.3s linear;
+        }
+
+        .product4 :hover img {
+            transform: scale(1.1);
+        }
+
+        .product3 img {
+            float: right;
+            max-width: 18%;
+            transition: all 0.3s linear;
+        }
+
+        .product3 :hover img {
+            transform: scale(1.1);
+        }
+
+        .clearfix {
+            clear:left;
+        }
+
+        .place {
+            font-size: 12px;
+            margin: 10px auto;
+            margin-top: 60px;
+        }
+
+        .place img {
+            width: 70%;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .place a {
+            text-decoration: none;
+            color:#494949;
+        }
+
+        .place b {
+            font-size: 14px;
+        }
+
+        .place p {
+            max-width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .place1 {
+            text-align: center;
+            float: left;
+            width: 25%;
+        }
+
+        .place2 {
+            text-align: center;
+            float: left;
+            width: 25%;
+        }
+
+        .place3 {
+            text-align: center;
+            float: left;
+            width: 25%;
+        }
+
+        .place4 {
+            text-align: center;
+            float: left;
+            width: 25%;
+        }
+
+        .second {
+            background-color: #ececec;
+            padding-bottom: 80px;
+            float: left;
+            width: 100%;
+        }
+
+        .second .subtitle {
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        .second .service a {
+            text-decoration: none;
+            color: #494949;
+            float: left;
+            max-width: 20%;
+            font-size: 90%;
+            padding-left: 4%;
+            padding-bottom: 40px;
+            padding-top: 10px;
+        }
+
+        .service1 {
+            background-color: #dadada;
+            text-align: center;
+        }
+
+        .service2 {
+            background-color: #dadada;
+            text-align: center;
+        }
+
+        .service3 {
+            background-color: #dadada;
+            text-align: center;
+        }
+
+        .service4 {
+            background-color: #dadada;
+            text-align: center;
+        }
+
+        .second .service a:hover {
+            text-decoration: none;
+            color: #ff7c7c;
+            float: left;
+            max-width: 20%;
+            font-size: 90%;
+            padding-left: 4%;
+            padding-bottom: 40px;
+            padding-top: 10px;
+        }
+
+        .ad {
+            margin-top: 80px;
+        }
+
+        .clearfix{
+            clear: both;
+        }
+
+        .submenu {
+            background-color: #242424;
+            height: 300px;
+        }
+
+        .submenu p {
+            display: inline;
+            color: #d1d1d1;
+            font-size: 12px;
+            padding-left: 4px;
+        }
+
+        .firstp {
+            padding-left: 40px;
+            padding-right: 40px;
+            border-top: 1px solid #d1d1d1;
+        }
+
+        .secondp {
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-top: 130px;
+        }
+
+        .secondp p {
+            display: inline;
+            color: #d1d1d1;
+            font-size: 12px;
+            padding-left: 4px;
+        }
+
+        .add {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .add p {
+            display: inline;
+            color: #d1d1d1;
+            font-size: 12px;
+            padding-left: 4px;
+        }
+
+        .sns {
+            text-align: center;
+            background-color: #ececec; 
+        }
+
+        .sns img {
+            display: inline;
+            width: 4%;
+        }
+        
+        .sns :hover img {
+            background-color: #c0c0c0;
+        }
+
+
+        }
+
+        @media (min-width:1200px) {
+
+            .navbar {
+            display:inline;
+            margin-top: 10px;
+        }
+
+        .navbar img {
+            width: 120px;
+        }
+
+        .help {
+           list-style: none;
+           float:right;
+        }
+
+        .help li {
+            float:left;
+        }
+
+        .menubar img {
+            width: 0px;
+        }
+
+        .plus1 a {
+            text-decoration: none;
+            color: rgb(171, 171, 171);
+            padding-left: 80px;
+            font-size: 18px;
+        }
+
+        .plus1 {
+            padding-top:10px;
+            padding-bottom: 10px;
+            margin-top: 7px;
+            border-top: 2px solid rgba(171, 171, 171, 0.3);
+            border-bottom: 2px solid rgba(171, 171, 171, 0.3);
+        }
+
+        .plus1 :hover {
+            color: #fe7171;
+        }
+
+        .help a {
+            text-decoration:none;
+            color:rgb(171, 171, 171);
+            padding-right:10px;
+            font-size: 13px;
+            vertical-align: top;
+        }
+        
+        .help li a:hover {
+            color:#fe7171;
+        }
+        
+        .navbar img {
+            padding-top:10px;
+            padding-left:10px;
+        }
+
+        .navbar a:not(:first-child) {
+            padding-right: 20px;
+        }
+
+        .mainimage {
+            background-image: url( "https://i.postimg.cc/Vs2FQwB4/img-01-02-02.jpg" );
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-width: 2000px;
+            padding-top: 250px;
+            padding-bottom: 250px;
+            margin-top: 10px;
+        }
+
+        .mainimage h3{
+            color: white;
+            text-align: center;
+            font-size: 28px;
+            text-shadow: #292929 3px 3px 3px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            color:#494949;
+        }
+
+        #pic1 img {
+            width: 13%;
+            border: solid 6px white;
+        }
+
+        #pic2 img {
+            width: 18%;
+            position:relative;
+            margin-left: -50px;
+            border: solid 6px white;
+        }
+
+        #pic3 img {
+            width: 23%;
+            position:relative;
+            margin-left: -50px;
+            border: solid 6px white;
+        }
+
+        #pic4 img {
+            width: 18%;
+            position:relative;
+            margin-left: -50px;
+            border: solid 6px white;
+            z-index: -1;
+        }
+
+        #pic5 img {
+            width: 13%;
+            position:relative;
+            margin-left: -50px;
+            border: solid 6px white;
+            z-index: -2;
+        }
+
+        .photogallery {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .product {
+            text-align: center;
+            background-color: #eaeaea;
+            padding-bottom:80px;
+            padding-top: 40px;
+        }
+
+        .product b {
+            text-align: center;
+            font-size: 30px;
+            color:#494949;
+        }
+
+        .product1 img {
+            float: left;
+            max-width: 20%;
+            margin-top: 100px;
+            padding-right: 50px;
+            transition: all 0.3s linear;
+        }
+
+        .product1 :hover img {
+            transform: scale(1.1);
+        }
+
+        .product2 img {
+            float: left;
+            max-width: 17%;
+            margin-top: 100px;
+            transition: all 0.3s linear;
+        }
+
+        .product2 :hover img {
+            transform: scale(1.1);
+        }
+
+        .product4 img {
+            float: right;
+            max-width: 19%;
+            margin-top: 110px;
+            transition: all 0.3s linear;
+        }
+
+        .product4 :hover img {
+            transform: scale(1.1);
+        }
+
+        .product3 img {
+            float: right;
+            max-width: 18%;
+            transition: all 0.3s linear;
+        }
+
+        .product3 :hover img {
+            transform: scale(1.1);
+        }
+
+        .clearfix {
+            clear:left;
+        }
+
+        .place {
+            font-size: 12px;
+            margin: 10px auto;
+            margin-top: 60px;
+        }
+
+        .place img {
+            width: 70%;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .place a {
+            text-decoration: none;
+            color:#494949;
+        }
+
+        .place b {
+            font-size: 14px;
+        }
+
+        .place p {
+            max-width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .place1 {
+            text-align: center;
+            float: left;
+            width: 25%;
+        }
+
+        .place2 {
+            text-align: center;
+            float: left;
+            width: 25%;
+        }
+
+        .place3 {
+            text-align: center;
+            float: left;
+            width: 25%;
+        }
+
+        .place4 {
+            text-align: center;
+            float: left;
+            width: 25%;
+        }
+
+        .second {
+            background-color: #ececec;
+            padding-bottom: 80px;
+            float: left;
+            width: 100%;
+        }
+
+        .second .subtitle {
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        .second .service a {
+            text-decoration: none;
+            color: #494949;
+            float: left;
+            max-width: 20%;
+            font-size: 90%;
+            padding-left: 4%;
+            padding-bottom: 40px;
+            padding-top: 10px;
+        }
+
+        .service1 {
+            background-color: #dadada;
+            text-align: center;
+        }
+
+        .service2 {
+            background-color: #dadada;
+            text-align: center;
+        }
+
+        .service3 {
+            background-color: #dadada;
+            text-align: center;
+        }
+
+        .service4 {
+            background-color: #dadada;
+            text-align: center;
+        }
+
+        .second .service a:hover {
+            text-decoration: none;
+            color: #ff7c7c;
+            float: left;
+            max-width: 20%;
+            font-size: 90%;
+            padding-left: 4%;
+            padding-bottom: 40px;
+            padding-top: 10px;
+        }
+
+        .ad {
+            margin-top: 80px;
+            background-image: url("https://i.postimg.cc/bNQsGjHF/2022-06-14-031957.png");
+        }
+
+        .clearfix{
+            clear: both;
+        }
+
+        .submenu {
+            background-color: #242424;
+            height: 300px;
+        }
+
+        .submenu p {
+            display: inline;
+            color: #d1d1d1;
+            font-size: 12px;
+            padding-left: 4px;
+        }
+
+        .firstp {
+            padding-left: 40px;
+            padding-right: 40px;
+            border-top: 1px solid #d1d1d1;
+        }
+
+        .secondp {
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-top: 130px;
+        }
+
+        .secondp p {
+            display: inline;
+            color: #d1d1d1;
+            font-size: 12px;
+            padding-left: 4px;
+        }
+
+        .add {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .add p {
+            display: inline;
+            color: #d1d1d1;
+            font-size: 12px;
+            padding-left: 4px;
+        }
+
+        .sns {
+            text-align: center;
+            background-color: #ececec; 
+        }
+
+        .sns img {
+            display: inline;
+            width: 3%;
+        }
+        
+        .sns :hover img {
+            background-color: #c0c0c0;
+        }
+
+        }
+    </style>
+</head>
+<body>
+<div class="all">
+    <div class="navbar">
+        <a href="index.html"><img src="https://i.postimg.cc/JnJ9Nx1W/pngwing-com-5.png"></a>
+
+        <div class="menubar">
+            <a href="#"><img src="https://i.postimg.cc/4xy8dt2s/pngwing-com-5.png"></a>
+        </div>
+
+        <ul class="help">
+            <li><a href="기말 과제 (로그인).html">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">마이페이지</a></li>
+        </ul>
+    </div>
+
+    <div class="plus1">
+        <a href="#">제품</a>
+        <a href="#">고객 지원</a>
+        <a href="#">이벤트</a>
+        <a href="#">e스토어</a>
+        <a href="#">Rchive</a>
+        <a href="#">프로</a>
+    </div>
+    
+
+    <div class="mainimage">
+        <h3>올해의 One Pick!</h3>
+    </div>
+
+    <div class="first">
+        <div class="subtitle">
+            <p>______</p>
+            <h2>PHOTO GALLERY</h2>
+        </div>
+    
+        <div class="photogallery">
+            <a href="#" id="pic1"><img src="https://i.postimg.cc/hjHXXqt2/1.png"></a>
+            <a href="#" id="pic2"><img src="https://i.postimg.cc/QxgFdwGq/5.png"></a>
+            <a href="#" id="pic3"><img src="https://i.postimg.cc/NfvyYYVM/2.png"></a>
+            <a href="#" id="pic4"><img src="https://i.postimg.cc/MTjT2rmV/3.png"></a>
+            <a href="#" id="pic5"><img src="https://i.postimg.cc/xjMC6hCS/4.png"></a>
+        </div>
+    </div>
+
+    <div class="product">
+
+        <b>제품</b>
+
+        <div class="product1">
+            <a href="기말 과제 (제품1).html" id="dslr">
+            <img src="https://i.postimg.cc/wj5CGKyn/pngegg.png">
+            </a>
+        </div>
+    
+        <div class="product2">
+            <a href="기말 과제 (제품2).html" id="lens">
+            <img src="https://i.postimg.cc/mgMLZ6cS/pngwing-com-2-1.png">
+            </a>
+        </div>
+    
+        <div class="product3">
+            <a href="기말 과제 (제품3).html" id="mirrorless">
+            <img src="https://i.postimg.cc/t40bctrn/pngwing-com-1-1.png">
+            </a>
+        </div>
+    
+        <div class="product4">
+            <a href="기말 과제 (제품4).html" id="camcorder">
+            <img src="https://i.postimg.cc/Y94kVnwg/pngegg-1.png">
+            </a>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+
+    <div class="place">
+        <div class="place1">
+            <a href="#" class="1">
+            <img src="https://i.postimg.cc/MHzCPGk9/10.png">
+            <br>
+                <b>캐논 플렉스</b>
+                <p>사진, 영상, 문화의 '즐거움'과 '체험'하는 복합 문화 공간입니다.</p>
+            </a>
+        </div>
+    
+        <div class="place2">
+            <a href="#" class="2">
+            <img src="https://i.postimg.cc/FsWMpmTx/11.png">
+            <br>
+            <b>캐논 스마트 렌즈파인더</b>
+            <p>캐논 렌즈와 관련된 모든 정보를 스마트 렌즈파인더 한 곳에서 확인하세요.</p>
+            </a>
+        </div>
+    
+        <div class="place3">
+            <a href="#" class="3">
+            <img src="https://i.postimg.cc/cLvV5jjG/12.png">
+            <br>
+            <b>Rchive</b>
+            <p>EOS R system의 모든 것을 한 자리에서 확인해 보세요.</p>
+            </a>
+        </div>
+    
+        <div class="place4">
+            <a href="#" class="4">
+            <img src="https://i.postimg.cc/4xjrCPk7/13.png">
+            <br>
+            <b>프로</b>
+            <p>캐논 정품을 사용하는 프로 사진가를 위한 캐논만의 특별한 서비스</p>
+            </a>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="ad">
+        <a href="#"><img src="https://i.postimg.cc/qq6621PX/2022-06-13-172713-1.png" width="100%">
+        </a>
+    </div>
+
+    
+    <div class="second">
+        <div class="subtitle">
+            <p>______</p>
+            <h2>SERVICE</h2>
+        </div>
+    
+        <div class="service">
+            <div class="service1">
+                <a href="#" class="5">
+                    <b>정품 등록</b>
+                    <p>정품을 등록하고 다양한 혜택을 받으세요.</p>
+                </a>
+            </div>
+        
+            <div class="service2">
+                <a href="#" class="6">
+                    <b>기술 지원</b>
+                    <p>소프트웨어, 매뉴얼, 펌웨어를 다운로드 받을 수 있습니다.</p>
+                </a>
+            </div>
+        
+            <div class="service3">
+                <a href="#" class="7">
+                    <b>매장 안내</b>
+                    <p>캐논 제품의 판매 또는 수리 서비스 매장을 안내해 드립니다.</p>
+                </a>
+            </div>
+    
+            <div class="service4">
+                <a href="#" class="8">
+                    <b>AS안내</b>
+                    <p>픽업 또는 서비스센터 방문을 통해 제품 수리를 받을 수 있습니다.</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+    </div>
+    
+
+    <div class="sns">
+        <a href="https://www.facebook.com/canonkoreacamera" class="sns1"><img src="https://i.postimg.cc/N0TPVVdn/pngwing-com-8.png"></a>
+        <a href="https://www.youtube.com/channel/UCzRW5RWMLdRQjwTuZLl5yfg" class="sns2"><img src="https://i.postimg.cc/m2DpRhdC/pngwing-com-9.png"></a>
+        <a href="https://www.instagram.com/canonkorea/" class="sns3"><img src="https://i.postimg.cc/G3j6dWbw/pngwing-com-7.png"></a>
+        <a href="https://twitter.com/canoncamera_kr" class="sns4"><img src="https://i.postimg.cc/2SLHbMN5/pngwing-com-10.png"></a>
+
+        <div class="clearfix"></div>
+    </div>
+    
+
+    <div class="submenu">
+        <div class="deco">
+            <p> </p>
+        </div>
+        <div class="firstp">
+            <br>
+            <p>회사 소개</p> <p>|</p>
+            <p>이용약관</p> <p>|</p>
+            <p>개인정보처리방침</p> <p>|</p>
+            <p>영상정보 처리기기 운영방침</p> <p>|</p>
+            <p>사이트맵</p> <p>|</p>
+            <p>캐논 코리아 통합사이트</p> <p>|</p>
+            <p>캐논글로벌</p>
+        </div>
+
+        <div class="secondp">
+            <p>캐논코리아 주식회사</p> <p>|</p>
+            <p>대표자 : 최세환</p> <p>|</p>
+            <p>사업자 등록번호 : 120-81-15636</p> <p>|</p>
+            <p>통신판매업 신고번호 : 강남-01282</p>
+        </div>
+
+        <div class="add">
+            <p>주소 : 서울특별시 강남구 테헤란로 607 (삼성동)</p>
+            <br>
+            <p>COPYRIGHT © CANON KOREA INC. All RIGHTS RESERVED</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
